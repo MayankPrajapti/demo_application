@@ -6,9 +6,9 @@ part 'lead_data_model.g.dart';
 @JsonSerializable()
 class LeadDataModel {
   @JsonKey(name: "parent")
-  Parent parent;
+  Map<String,dynamic> parent;
   @JsonKey(name: "children")
-  Children children;
+  Map<String,dynamic> children;
 
   LeadDataModel({required this.parent, required this.children});
 

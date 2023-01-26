@@ -42,11 +42,12 @@ dependencies:
   json_annotation: ^4.6.0
   freezed_annotation: ^2.1.0
   retrofit: ^3.0.1+1
-  url_launcher: ^6.1.5
+  url_launcher: ^6.1.8
   dartz: ^0.10.1
   equatable: ^2.0.5
   logger: ^1.1.0
   google_fonts: ^3.0.1
+  flutter_gradient_colors: ^2.1.1
 
 dev_dependencies:
   flutter_test:

@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'configure.dart';
 
 void main() {
+  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   configureDependencies();
   runApp(const MyApp());
 }
