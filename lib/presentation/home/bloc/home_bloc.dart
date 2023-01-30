@@ -1,11 +1,11 @@
 import 'package:demo_application/models/lead_data_model.dart';
-import 'package:demo_application/service/do_whooktest_service.dart';
+import 'package:demo_application/service/service.dart';
 import 'package:demo_application/utils/enum.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 
-part 'home_bloc..freezed.dart';
+part 'home_bloc.freezed.dart';
 
 @injectable
 class HomeBloc extends Bloc<HomeEvent, HomeState> {

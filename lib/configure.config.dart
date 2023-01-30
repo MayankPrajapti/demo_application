@@ -8,9 +8,9 @@
 import 'package:get_it/get_it.dart' as _i1;
 import 'package:injectable/injectable.dart' as _i2;
 
-import 'presentation/home/bloc/home_bloc..dart' as _i4;
-import 'service/do_whooktest_service.dart'
-    as _i3; // ignore_for_file: unnecessary_lambdas
+import 'presentation/demo_2/bloc/screen2_bloc.dart' as _i4;
+import 'presentation/home/bloc/home_bloc.dart' as _i5;
+import 'service/service.dart' as _i3; // ignore_for_file: unnecessary_lambdas
 
 // ignore_for_file: lines_longer_than_80_chars
 /// initializes the registration of provided dependencies inside of [GetIt]
@@ -25,6 +25,8 @@ _i1.GetIt $initGetIt(
     environmentFilter,
   );
   gh.lazySingleton<_i3.IRestClientService>(() => _i3.RestClientService());
-  gh.factory<_i4.HomeBloc>(() => _i4.HomeBloc(get<_i3.IRestClientService>()));
+  gh.factory<_i4.Screen2Bloc>(
+      () => _i4.Screen2Bloc(get<_i3.IRestClientService>()));
+  gh.factory<_i5.HomeBloc>(() => _i5.HomeBloc(get<_i3.IRestClientService>()));
   return get;
 }

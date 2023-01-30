@@ -3,7 +3,7 @@
     package="com.example.demo_application">
     <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="demo_application"
+        android:label="Leads Information"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
         android:usesCleartextTraffic="true"

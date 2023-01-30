@@ -15,8 +15,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-      theme:ThemeData(useMaterial3: true, textTheme: GoogleFonts.poppinsTextTheme(),),
+    return MaterialApp(
+      theme: ThemeData(
+          useMaterial3: true,
+          primaryColor: Color(0xff068188),
+          textTheme: GoogleFonts.poppinsTextTheme(),
+          appBarTheme:
+              const AppBarTheme(iconTheme: IconThemeData(color: Colors.white))),
       home: const HomeScreen(),
     );
   }
